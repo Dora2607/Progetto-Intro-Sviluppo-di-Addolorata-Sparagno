@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" 
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <Title>Hotel Pomelia</Title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="page">
+            <header>
+                <div class="container_desktop">
+                    <!--Logo Hotel Pomelia-->
+                    <div class="logo_intestazione">
+                        <a href="template.html"><img src="Images/logo-150x155.png" alt="Logo Hotel"></a>
+                    </div>
+                   
+                    <!--Realizzazione del menu-->
+                    <nav>
+                        <ul class="menu">
+                            <li><a href="Sottopagine/struttura.html" target="_blank">Struttura</a></li>
+                            <li><a href="Sottopagine/sostenibilità.html" target="_blank">Sostenibilità</a></li>
+                            <li><a href="Sottopagine/ristorante.html" target="_blank">Ristorante</a></li>
+                            <li><a href="Sottopagine/attività.html" target="_blank">Attività</a></li>
+                            <li><a href="Sottopagine/contattaci.html" target="_blank">Contattaci</a></li>
+                        </ul>    
+                    </nav>
+                          
+                    <!--bottone di prenotazione-->
+                    <div class="bottone_container"><a class="bottone" href="#" target="_blank">Prenota</a></div> 
+                </div>    
+                    
+            </header>
+            
+            <!--inserire l'immagine per l'home page-->
+            <article>
+                <div class="sezione_centrale">
+                    <picture class="photo">
+                        <source media="(max-width: 414px)" srcset="Images/hotel_414x896.jpg" title="hotelmobile">
+                        <source media="(max-width: 768px)" srcset="Images/hotel_890x1024.jpg" title="hoteltablet">
+                        <source media="(max-width: 980px)" srcset="Images/hotel_980x1024.jpg" title="img3device">
+                        <source media="(min-width: 981px)" srcset="Images/hotel_1024x1024.jpg" title="hotel">
+                        <img src="Images/hotel.jpg">
+                    </picture>                    
+                    
+                    
+                    <div class="mission">
+                        <h2>Sicilia sostenibile, turismo felice</h2>
+                        <p>
+                            Vieni a scoprire la Sicilia ecosostenibile. <br>
+                            La nostra struttura è green e ti offre il massimo del comfort e del relax. 
+                            Goditi la natura e il mare, e ricorda che il tuo soggiorno fa la differenza. 
+                            Contribuisci al benessere del pianeta e del territorio. <br> 
+                            Scegli la consapevolezza, scegli la vacanza responsabile.</p>
+                    </div>
+                </div>
+            </article>
+                
+            <footer>
+                <div class="logo_finale">
+                    <a href="#"><img src="Images/logo.png" alt="Logo Hotel"></a>
+                </div>
+                
+                    <article>
+                        <div class="indirizzo">
+                            <h4>Dove Siamo </h4>
+                            <address>
+                                Hotel Pomelia <br>
+                                Strada Fittizia 1, <br>
+                                cap, città (RG) <br>
+                                Italia
+                            </address>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="container">
+                            
+                            <div class="social">
+                                <h4>Seguici</h4>
+                                    <div class="icon_social">
+                                        <a href="https://it-it.facebook.com/" target="_blank">
+                                        <span><img src="Images/social-media/icons8-facebook.svg" alt="facebook"></span></a>
+                                        <a href="https://twitter.com/?lang=it" target="_blank">
+                                        <span><img src="Images/social-media/icons8-twitter.svg" alt="twitter"></span></a>
+                                        <a href="https://www.instagram.com/" target="_blank">
+                                        <span><img src="Images/social-media/icons8-instagram.svg" alt="instagram"></span></a>
+                                        <a href="https://www.linkedin.com/" target="_blank">
+                                        <span><img src="Images/social-media/icons8-linkedin.svg" alt="linkedin"></span></a>
+                                    </div> 
+                            </div>
+                            <div class="contatti">
+                                <h4>Contatti</h4>
+                                <ul class="contatti">
+                                    <li>Email: 
+                                        <a title="email" href="pomelia.hotel@gmail.com"> pomelia.hotel@gmail.com</a></li>
+                                    <li>Tel: 
+                                        <a href="+39 0000000000">+39 0000000000</a></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </article>
+                
+            </footer>
+        </div>    
+    </body>
+</html>

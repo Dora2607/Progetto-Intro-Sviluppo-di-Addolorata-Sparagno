@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Modello l'header: logo, menu, tasto prenota */
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: #6a9ca6;
+    height: auto;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_intestazione {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+   /* border: 1px red solid;*/
+    
+}
+
+.logo_intestazione img {
+    display: block;
+    border-radius: 5px;
+}
+
+.menu {
+    display: block;
+    background-color:  #6a9ca6;
+  /*  border: 2px solid orange; */
+   
+}
+.menu > li {
+    list-style: none;
+    text-align: center;
+    padding: 2px;
+    margin: 5px;
+}
+
+a:link,
+a:visited {
+    color:#dffbff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0f5344;
+}
+
+a:active {
+    text-decoration: underline;
+    color: #06352b;
+}
+
+.bottone_container {
+    display: flex;
+    margin: 5px;
+}
+
+.bottone:link,
+.bottone:visited {
+    display: block;
+
+    color: #196e5c;
+    background-color: #edf4ef;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    border: 1px solid #196e5c;
+    border-radius: 5px;
+
+    width: 200px;
+    height: auto; 
+}
+
+.bottone:hover,
+.bottone:visited:hover {
+
+    text-decoration: none;
+    color: #eba519;
+    border: 1px solid #eba519;
+}
+
+
+/* Modello il corpo centrale: immagine+descrizione mission */
+
+.photo img {
+    display: block;
+    width: 100%;
+}
+
+
+h1, h2, h3, h4 {
+    text-align: center;
+    color: #06352b;
+    margin: 10px;
+} 
+
+.mission {    
+    background-color: #edf4ef;    
+    padding: 20px;
+    color: #196e5c;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5em;   
+}
+
+/*Modello il footer: logo finale, dove siamo, contatti, seguici*/
+
+footer {
+    width: 100%;
+    height: auto;
+    
+    font-size: 20px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(237,244,239,1) 35%, rgba(106,156,166,1) 100%);
+}
+
+.logo_finale {
+    display: flex;
+    justify-content: center;
+    margin: 0 25px 25px 25px;
+    background-color: rgb(254, 253, 251);
+}
+
+.logo_finale img {
+    display: block;
+    border-radius: 5px;
+}
+
+.indirizzo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+address {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    color: #196e5c;
+}
+
+.container {
+    margin: 10px; 
+    justify-content: center;
+}
+    
+.social, .contatti {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    padding: 10px;
+}
+
+.contatti li {
+    font-size: 18px;
+    padding: 2px;
+    margin: 5px;
+}
+
+.contatti a {
+    color:#196e5c; 
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 414px) {
+    .page {
+        background-color: #edf4ef;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+
+    }
+
+    .container_desktop {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .container {
+        display: flex;
+    }
+
+}
+
+/* Large devices */
+
+@media only screen and (min-width:992px) {
+
+    header {
+        flex-direction: row;
+    }
+
+    .container_desktop {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+    }
+
+    .menu { 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .menu > li {
+        margin-left: 50px;
+    }
+
+    .photo {
+        display: flex;
+        justify-content: center;
+        background-color: #edf4ef
+    }
+
+    .photo img {
+        max-width: 1024px;
+        
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-around;
+        padding: 15px;
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(237,244,239,1) 35%, rgba(106,156,166,1) 100%);
+    }
+    .logo_finale {
+        width: auto;
+        display: flex;
+        order: 1;
+    }
+
+    .social, .contatti, .indirizzo {
+        align-self: flex-start;
+    }
+
+    .indirizzo {
+       padding-top: 15px;
+       margin-top: 10px;
+    }
+
+}
